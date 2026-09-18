@@ -1,0 +1,76 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  height: var(--header-height);
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content {
+  width: 100%;
+  max-width: var(--container-width);
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 24px;
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: var(--primary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.5px;
+}
+
+.mentor-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: rgba(99, 102, 241, 0.15);
+  color: var(--primary);
+  padding: 4px 10px;
+  border-radius: 99px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-footer {
+  border-top: 1px solid var(--border-color);
+  padding: 24px;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  background-color: var(--bg-surface);
+}
